@@ -12,11 +12,11 @@ Plik readme dla projektu z programowania sieciowego.
 ### Podział tematów do zrobienia w Tex
 
 ```
-TCP/IP / OSI - Kamil G.
+TCP/IP / OSI - Jakub K.
 ```
 
 ```
-SDN+APIC-EM - Jakub K.
+SDN+APIC-EM - Kamil G.
 ```
 
 
