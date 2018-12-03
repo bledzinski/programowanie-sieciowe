@@ -58,14 +58,41 @@ Rozproszony system kontroli wersji. Stworzył go Linus Torvalds jako narzędzie 
 
 Pierwsza wersja narzędzia Git została wydana 7 kwietnia 2005 roku, by zastąpić poprzednio używany w rozwoju Linuksa, niebędący wolnym oprogramowaniem, system kontroli wersji BitKeeper.
 \subsection{Historia}
-Prace nad Gitem rozpoczęły się po tym, jak BitKeeper, używany wtedy do rozwoju Linuksa, przestał być darmowy dla projektów o otwartym kodzie źródłowym. Torvalds szukał rozproszonego systemu kontroli wersji, który mógłby być użyty zamiast BitKeepera, głównymi kryteriami wyboru były:
-
-Wziąć przykład z CVS, czego nie robić.
-System powinien być rozproszony.
+Prace nad Gitem rozpoczęły się po tym, jak BitKeeper, używany wtedy do rozwoju Linuksa, przestał być darmowy dla projektów o otwartym kodzie źródłowym. Torvalds szukał rozproszonego systemu kontroli wersji, który mógłby być użyty zamiast BitKeepera, głównymi kryteriami wyboru były:Wziąć przykład z CVS, czego nie robić. System powinien być rozproszony.
 System powinien być chroniony przed błędami w repozytorium (przypadkowymi, jak awaria twardego dysku, jak i złośliwymi, wprowadzonymi przez kogoś).
-System powinien być szybki.
-Pierwsze dwa punkty wyeliminowały wszystko prócz Monotone'a, a czwarty punkt wyeliminował wszystko, więc Torvalds postanowił napisać własny system kontroli wersji.
-
+System powinien być szybki. Pierwsze dwa punkty wyeliminowały wszystko prócz Monotone'a, a czwarty punkt wyeliminował wszystko, więc Torvalds postanowił napisać własny system kontroli wersji.
 Prace nad Gitem rozpoczęły się 3 kwietnia 2005 roku, projekt został ogłoszony 6 kwietnia, 7 kwietnia Git obsługiwał kontrolę wersji swojego własnego kodu, 18 kwietnia pierwszy raz wykonano łączenie kilku gałęzi kodu, 27 kwietnia Git został przetestowany pod względem szybkości z wynikiem 6,7 łat na sekundę, a 16 czerwca Linux 2.6.12 był hostowany przez Gita.
+\subsection{Najważniejsze cechy}
+Dobre wsparcie dla rozgałęzionego procesu tworzenia oprogramowania: jest dostępnych kilka algorytmów łączenia zmian z dwóch gałęzi, a także możliwość dodawania własnych algorytmów.
 
+Praca off-line: każdy programista posiada własną kopię repozytorium, do której może zapisywać zmiany bez połączenia z siecią; następnie zmiany mogą być wymieniane między lokalnymi repozytoriami.
+
+Wsparcie dla istniejących protokołów sieciowych: dane można wymieniać przez HTTP(S), FTP, rsync, SSH.
+
+Efektywna praca z dużymi projektami: system Git według zapewnień Torvaldsa, a także według testów fundacji Mozilla, jest o rzędy wielkości szybszy niż niektóre konkurencyjne rozwiązania.
+
+Każda rewizja to obraz całego projektu: w przeciwieństwie do innych systemów kontroli wersji, Git nie zapamiętuje zmian między kolejnymi rewizjami, lecz kompletne obrazy. Z jednej strony wymaga to nieco więcej pracy aby porównać dwie rewizje, z drugiej jednak pozwala np. na automatyczną obsługę zmian nazw plików.
+
+\newpage
+\section{LaTeX}
+\subsection{Opis}
+LaTeX to zestaw makr zaprojektowany przez Leslie Lamporta stanowiących nadbudowę nad systemem składu tekstu TeX, będącym kompletnym językiem programowania zaimplementowanym przez Donalda Knutha. Jego celem jest umożliwienie stworzenia profesjonalnie wyglądających oraz poprawnie złożonych dokumentów, szczególnie naukowych – zawierających matematyczne wzory – oraz dokumentów działających automatycznie (szablonowo).
+
+LaTeX znacznie różni się od programów typu WYSIWYG (ang. What You See Is What You Get – widzisz to, co dostajesz, m.in. OpenOffice.org Writer lub Microsoft Word) i jego użycie przypomina bardziej programowanie. Do podstawowych trudności dla nowych użytkowników LaTeX-a należą:
+
+składanie dokumentów może sprawiać trudności i zabierać czas niedoświadczonym użytkownikom
+nie widać bezpośrednio efektu zmian
+musisz poznać niezbędne polecenia w LaTeX-u
+czasami ciężko uzyskać pożądane efekty.
+Z drugiej strony taki język znaczników posiada także zalety:
+
+dokument wygląda profesjonalnie, m.in. warstwy, fonty, tabele tworzą spójną całość
+zachęca do tworzenia poprawnych pod względem struktury dokumentów
+profesjonalnie złożone dokumenty charakteryzuje mała objętość w porównaniu do zawartości
+w łatwy sposób można tworzyć matematyczne wzory
+pozwala na zaawansowaną automatyzację składania dokumentów
+indeksy, odwołania i bibliografie mogą być automatycznie formatowane
+obsługuje praktycznie każdy komputer i system operacyjny identycznie składając dokumenty na każdym
+dokument źródłowy jest plikiem tekstowym, zatem jego wersjonowanie jest możliwe (porównywanie wersji, przypisywanie autora do konkretnej treści/zmian).
+Dokument LaTeX-a jest normalnym plikiem tekstowym, który przechowuje tekst z dodatkowymi znacznikami. Kiedy plik źródłowy zostanie przetworzony LaTeX-em otrzymamy plik DVI (ang. device-independent), który potem może zostać przekonwertowany do finalnego formatu np. PDF lub PostScript, które można łatwo wydrukować. Jest również możliwe bezpośrednie utworzenie pliku w formacie PDF.
 \end{document}
