@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  3 DEC 2018 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  3 DEC 2018 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -125,15 +125,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--27
 4/cmr/m/n/10 , per-se-ba.github.io,
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+[]\OT4/cmr/m/n/10 Wikibooks.org \OT4/cmr/m/it/10 La-TeX\OT4/cmr/m/n/10 , Spo-ªe
+cz-no±¢ Wi-ki-bo-oks,
+ []
+
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] [4] [5] [6] (./Temat_3.aux) ) 
 Here is how much of TeX's memory you used:
- 468 strings out of 492649
- 5937 string characters out of 6129621
+ 469 strings out of 492649
+ 5944 string characters out of 6129621
  66932 words of memory out of 5000000
- 4400 multiletter control sequences out of 15000+600000
+ 4401 multiletter control sequences out of 15000+600000
  10360 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  23i,6n,25p,591b,194s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -144,7 +150,7 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/pl/plr17.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/public/pl/plti10.pfb>
-Output written on Temat_3.pdf (6 pages, 59125 bytes).
+Output written on Temat_3.pdf (6 pages, 59984 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
