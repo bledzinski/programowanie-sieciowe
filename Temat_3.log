@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  3 DEC 2018 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  3 DEC 2018 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,29 +119,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--20
 ªe-cze«-stwo Wi-ki-pe-dia,
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--27
+[]\OT4/cmr/m/n/10 Wikipedia.org \OT4/cmr/m/it/10 Ju-py-ter - wpro-wa-dze-nie\OT
+4/cmr/m/n/10 , per-se-ba.github.io,
+ []
+
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] (./Temat_3.aux) ) 
+[2] [3] [4] [5] (./Temat_3.aux) ) 
 Here is how much of TeX's memory you used:
- 467 strings out of 492649
- 5928 string characters out of 6129621
+ 468 strings out of 492649
+ 5937 string characters out of 6129621
  66932 words of memory out of 5000000
- 4399 multiletter control sequences out of 15000+600000
+ 4400 multiletter control sequences out of 15000+600000
  10360 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  23i,6n,25p,591b,194s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/pl
-/plit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/pl/plr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-public/pl/plti10.pfb>
-Output written on Temat_3.pdf (3 pages, 48800 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/
+dvips/pl/plit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/pl/plrm.e
+nc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/pl/plr17.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/pl/plti10.pfb>
+Output written on Temat_3.pdf (5 pages, 54544 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
