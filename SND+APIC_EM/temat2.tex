@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\title{Opis SND APIC-EM}
+\date{\today}
+\author{Kamil Gorzała}
+
+\begin{document}
+
+
+  \maketitle
+  \begin{thebibliography}{9}
+  \bibitem{SDN}
+  Wikipedia.org
+  \textit{ sdn},
+  Społeczeństwo Wikipedia,
+  https://pl.wikipedia.org/wiki/Programowalna_sie%C4%87_komputerowa
+  \end{thebibliography}
+  \newpage
+
+\section{SDN}
+\subsection{Opis}
+	Technologia definiowana przez oprogramowanie (SDN) to podejście do przetwarzania w chmurze, które ułatwia zarządzanie siecią i umożliwia programowo wydajną konfigurację sieci w celu poprawy wydajności i monitorowania sieci.  SDN ma na celu zajęcie się faktem, że architektura statyczna tradycyjnych sieci jest zdecentralizowana i złożona, podczas gdy obecne sieci wymagają większej elastyczności i łatwiejszego rozwiązywania problemów. SDN sugeruje scentralizować inteligencję sieciową w jednym komponencie sieciowym poprzez odłączenie procesu przekazywania pakietów sieciowych (płaszczyzny danych) od procesu routingu (płaszczyzny kontrolnej). Płaszczyzna kontrolna składa się z jednego lub więcej kontrolerów, które są uważane za mózg sieci SDN, w której włączona jest cała inteligencja. Jednak centralizacja danych wywiadowczych ma swoje wady, jeśli chodzi o bezpieczeństwo,  skalowalność i elastyczność  i jest to główny problem SDN.
+
+SDN był powszechnie kojarzony z protokołem OpenFlow (do zdalnej komunikacji z elementami płaszczyzny sieci w celu określenia ścieżki pakietów sieciowych przez przełączniki sieciowe) od czasu jego pojawienia się w 2011 roku. Jednak od 2012 roku  OpenFlow dla wielu firmy nie są już wyłącznym rozwiązaniem, dodały własne techniki. Należą do nich Open Network Environment firmy Cisco Systems i platforma wirtualizacji sieci firmy Nicira.
+
+ \newpage
+\section{APIC-EM}
+\subsection{Opis}
+	APIC EM rozszerza infrastrukturę Application Centric (ACI) na sieć WAN i dostęp. ACI zapewnia scentralizowaną automatyzację profilów aplikacji opartych na regułach. Dzięki programowalności zautomatyzowana kontrola sieci pomaga działom IT szybko reagować na nowe możliwości biznesowe. APIC EM można pobrać bez dodatkowych opłat, korzystając z bezpłatnego członkostwa w społeczności Cisco DevNet.
+
+Funkcje i możliwości
+
+APIC EM i jego aplikacje są częścią portfolio Cisco ONE Software. Kontroler zapewnia nisko-ryzykowne, stopniowe podejście do wdrażania technologii sieciowej definiowanej programowo (SDN) w środowiskach branżowych i kampusowych. Dzięki podejściu zorientowanemu na aplikację kontroler automatyzuje dostarczanie kompleksowej infrastruktury w celu szybkiego wdrażania aplikacji i usług.
+
+funkcje
+
+Oprogramowanie działające na dowolnym serwerze x86, oferowane jako oprogramowanie lub urządzenie
+Zaawansowany GUI bez umiejętności programowania
+Zintegrowana analityka, polityka i abstrakcja sieci
+Korzyści
+
+Masowo uproszczona konfiguracja i udostępnianie
+
+Kontroler automatyzuje wdrażanie i sprawdzanie zgodności polityk sieciowych w całej sieci end-to-end.
+
+Ochrona inwestycji
+
+Kontroler działa z istniejącą infrastrukturą sieci. Nie ma potrzeby przeprowadzania wymiany infrastruktury. Nie jest potrzebny żaden nowy sprzęt sieciowy.
+
+Otwartość, programowalność i personalizacja
+
+APIC EM jest wysoce programowalny poprzez otwarte interfejsy API (transfer danych reprezentacyjnych [RESTful] i OSGi). Umożliwia niezależnym twórcom oprogramowania tworzenie innowacyjnych usług sieciowych i aplikacji, które przyczyniają się do wzrostu gospodarczego.
+
+Polityka biznesowa do konfiguracji sieci
+
+Sterownik automatycznie tłumaczy zasady biznesowe na strategie na poziomie urządzeń sieciowych i umożliwia egzekwowanie zasad w sieciach typu end-to-end.
+\end{document}
