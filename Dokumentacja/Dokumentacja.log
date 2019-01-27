@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  27 JAN 2019 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  27 JAN 2019 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,44 +217,44 @@ Overfull \hbox (6.08405pt too wide) in paragraph at lines 17--18
 ka-cyj-nych. Mo-del TCP/IP
  []
 
-<tcp.png, id=9, 681.54625pt x 721.69624pt>
-File: tcp.png Graphic file (type png)
-<use tcp.png>
-Package pdftex.def Info: tcp.png  used on input line 34.
-(pdftex.def)             Requested size: 241.49895pt x 255.72493pt.
 
-Overfull \hbox (0.41718pt too wide) in paragraph at lines 33--35
+Overfull \hbox (0.41718pt too wide) in paragraph at lines 33--34
 []\OT4/cmr/m/n/10 Istnieje tak-»e Li-gh-twe-ight TCP/IP, sze-rzej zna-ny ja-ko 
 dar-mo-wy stos TCP/IP
  []
 
+<tcp.png, id=9, 681.54625pt x 721.69624pt>
+File: tcp.png Graphic file (type png)
+<use tcp.png>
+Package pdftex.def Info: tcp.png  used on input line 35.
+(pdftex.def)             Requested size: 241.49895pt x 255.72493pt.
 [2] [3 <./tcp.png>]
 <OSI.png, id=17, 501.875pt x 459.7175pt>
 File: OSI.png Graphic file (type png)
 <use OSI.png>
-Package pdftex.def Info: OSI.png  used on input line 50.
+Package pdftex.def Info: OSI.png  used on input line 51.
 (pdftex.def)             Requested size: 207.0021pt x 189.61476pt.
  [4 <./OSI.png>]
 <sdn.png, id=23, 332.24126pt x 152.57pt>
 File: sdn.png Graphic file (type png)
 <use sdn.png>
-Package pdftex.def Info: sdn.png  used on input line 60.
+Package pdftex.def Info: sdn.png  used on input line 61.
 (pdftex.def)             Requested size: 310.4979pt x 142.59402pt.
  [5 <./sdn.png>] [6]
 <python.png, id=31, 611.75027pt x 206.63113pt>
 File: python.png Graphic file (type png)
 <use python.png>
-Package pdftex.def Info: python.png  used on input line 97.
+Package pdftex.def Info: python.png  used on input line 98.
 (pdftex.def)             Requested size: 310.4979pt x 104.87915pt.
  [7 <./python.png>]
 [8]
 <jupyter.png, id=40, 1230.5975pt x 702.625pt>
 File: jupyter.png Graphic file (type png)
 <use jupyter.png>
-Package pdftex.def Info: jupyter.png  used on input line 117.
+Package pdftex.def Info: jupyter.png  used on input line 118.
 (pdftex.def)             Requested size: 345.0pt x 196.98024pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 117--119
+Overfull \hbox (15.0pt too wide) in paragraph at lines 118--120
 [][]
  []
 
@@ -262,22 +262,22 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 117--119
 <git.png, id=45, 803.0pt x 424.58624pt>
 File: git.png Graphic file (type png)
 <use git.png>
-Package pdftex.def Info: git.png  used on input line 134.
+Package pdftex.def Info: git.png  used on input line 135.
 (pdftex.def)             Requested size: 345.0pt x 182.41951pt.
  [10 <./git.png>] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 182--187
+Underfull \hbox (badness 10000) in paragraph at lines 183--188
 []\OT4/cmr/m/n/10 Wikipedia.org  \OT4/cmr/m/it/10 Py-thon\OT4/cmr/m/n/10 , Spo-
 ªe-cze«-stwo Wi-ki-pe-dia,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
+Underfull \hbox (badness 10000) in paragraph at lines 190--195
 []\OT4/cmr/m/n/10 Wikipedia.org \OT4/cmr/m/it/10 Ju-py-ter - wpro-wa-dze-nie\OT
 4/cmr/m/n/10 , per-se-ba.github.io,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--201
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
 []\OT4/cmr/m/n/10 Wikibooks.org \OT4/cmr/m/it/10 La-TeX\OT4/cmr/m/n/10 , Spo-ªe
 cz-no±¢ Wi-ki-bo-oks,
  []
@@ -298,7 +298,7 @@ exlive/2018/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/pl/plr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/pl/plti10.pfb>
-Output written on Dokumentacja.pdf (13 pages, 216852 bytes).
+Output written on Dokumentacja.pdf (13 pages, 216861 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
