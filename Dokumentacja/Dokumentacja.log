@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  27 JAN 2019 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.24)  27 JAN 2019 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,30 +264,56 @@ File: git.png Graphic file (type png)
 <use git.png>
 Package pdftex.def Info: git.png  used on input line 135.
 (pdftex.def)             Requested size: 345.0pt x 182.41951pt.
- [10 <./git.png>] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 183--188
+ [10 <./git.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+\OT4/cmr/m/n/10 oraz do-ku-men-tów dzia-ªa-j¡-cych au-to-ma-tycz-nie (sza-blo-n
+o-wo).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+<latex.png, id=53, 1445.4pt x 903.375pt>
+File: latex.png Graphic file (type png)
+<use latex.png>
+Package pdftex.def Info: latex.png  used on input line 153.
+(pdftex.def)             Requested size: 310.4979pt x 194.05643pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+[12 <./latex.png>] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 []\OT4/cmr/m/n/10 Wikipedia.org  \OT4/cmr/m/it/10 Py-thon\OT4/cmr/m/n/10 , Spo-
 ªe-cze«-stwo Wi-ki-pe-dia,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--195
+Underfull \hbox (badness 10000) in paragraph at lines 195--200
 []\OT4/cmr/m/n/10 Wikipedia.org \OT4/cmr/m/it/10 Ju-py-ter - wpro-wa-dze-nie\OT
 4/cmr/m/n/10 , per-se-ba.github.io,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--202
+Underfull \hbox (badness 10000) in paragraph at lines 202--207
 []\OT4/cmr/m/n/10 Wikibooks.org \OT4/cmr/m/it/10 La-TeX\OT4/cmr/m/n/10 , Spo-ªe
 cz-no±¢ Wi-ki-bo-oks,
  []
 
-[13] (./Dokumentacja.aux) ) 
+[14] (./Dokumentacja.aux) ) 
 Here is how much of TeX's memory you used:
- 1703 strings out of 492649
- 24622 string characters out of 6129621
+ 1707 strings out of 492649
+ 24681 string characters out of 6129621
  86264 words of memory out of 5000000
- 5564 multiletter control sequences out of 15000+600000
+ 5568 multiletter control sequences out of 15000+600000
  10360 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,25p,1015b,196s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -298,10 +324,10 @@ exlive/2018/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/pl/plr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/pl/plti10.pfb>
-Output written on Dokumentacja.pdf (13 pages, 216861 bytes).
+Output written on Dokumentacja.pdf (14 pages, 474181 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
