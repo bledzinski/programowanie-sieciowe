@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
 \title{Dokumentacja projektu z Programowania Sieciowego}
 \date{\today}
 \author{Karol Błędziński, Kamil Gorzała, Jakub Kołomański}
@@ -10,11 +11,90 @@
 
  \maketitle
  \newpage
+ \newpage
+ \section{Model TCP/IP}
+\subsection{Opis}
+	Model TCP/IP (ang. Transmission Control Protocol/Internet Protocol) – teoretyczny model warstwowej struktury protokołów komunikacyjnych. Model TCP/IP został stworzony w latach 70. XX wieku w DARPA, aby pomóc w tworzeniu odpornych na atak sieci komputerowych. Potem stał się podstawą struktury Internetu.
+	
+Podstawowym założeniem modelu TCP/IP jest podział całego zagadnienia komunikacji sieciowej na szereg współpracujących ze sobą warstw (ang. layers). Każda z nich może być tworzona przez programistów zupełnie niezależnie, jeżeli narzucimy pewne protokoły według których wymieniają się one informacjami. Założenia modelu TCP/IP są pod względem organizacji warstw zbliżone do modelu OSI. Jednak liczba warstw jest mniejsza i bardziej odzwierciedla prawdziwą strukturę Internetu. Model TCP/IP składa się z czterech warstw.
 
-\title{Pythona+jupyter oraz Git+LaTeX}
+Każdy protokół sieciowy można przyporządkować do określonej warstwy modelu TCP/IP. Pewną szczególną cechą rodziny protokołów TCP/IP używanej w Internecie jest podział protokołów z warstwy aplikacyjnej i połączeniowej. Niektóre protokoły z warstwy aplikacji wykorzystują tylko pewne protokoły z warstwy transportowej.
+
+Protokoły DNS, NTP wykorzystują tylko protokół UDP z warstwy transportowej. Protokoły FTP, SMTP, POP3, SSH, IRC posługują się tylko TCP. Natomiast SMB używa obu protokołów.
+
+Protokół SSL ma szczególną rolę. Może zostać umieszczony pomiędzy każdym połączeniowym protokołem warstwy aplikacji a TCP. Dzięki jego wykorzystaniu dane przesyłane przez aplikacje mogą zostać zaszyfrowane.
+
+Niektóre protokoły z warstwy aplikacji, jak np. SMB nie działają zwykle w Internecie. Są wykorzystane w sieciach lokalnych do udostępniania usług, jak np. zdalne drukarki czy dyski.
+
+W systemie GNU/Linux oraz innych odpowiednikach Uniksa dokładną listę protokołów transportowych można znaleźć w pliku.
+
+W dzisiejszych czasach, praktycznie każdy system operacyjny posiada domyślnie zainstalowane protokoły TCP/IP.
+
+Istnieje także Lightweight TCP/IP, szerzej znany jako darmowy stos TCP/IP dla systemów wbudowanych, czyli będących integralną częścią obsługiwanego przez nie sprzętu - jest to stos protokołów dla systemów obsługujących zarówno amatorskie jak i zaawansowane urządzenia, często budowane z wykorzystaniem programowalnych układów FPGA (np. sprzętowe serwery WWW, FTP). Istnieją także proste stosy TCP/IP realizowane całkowicie sprzętowo.
+\includegraphics[width=0.7\textwidth]{tcp.png}
+
+\section{Model ISO/OSI}
+\subsection{Opis}
+	Model OSI (pełna nazwa ISO OSI RM, ang. ISO Open Systems Interconnection Reference Model – model odniesienia łączenia systemów otwartych) lub OSI – standard zdefiniowany przez ISO oraz ITU-T opisujący strukturę komunikacji sieciowej.
+
+Międzynarodowa Organizacja Normalizacyjna (ang. International Organization for Standardization) na początku lat osiemdziesiątych dostrzegła potrzebę stworzenia modelu sieciowego, dzięki któremu producenci mogliby opracowywać współpracujące ze sobą rozwiązania sieciowe. W taki sposób powstała specyfikacja Open Systems Interconnection Reference Model, która do polskich norm została zaadaptowana w 1995 roku.
+
+Model ISO OSI RM jest traktowany jako model odniesienia (wzorzec) dla większości rodzin protokołów komunikacyjnych. Podstawowym założeniem modelu jest podział systemów sieciowych na 7 warstw (ang. layers) współpracujących ze sobą w ściśle określony sposób. Został przyjęty przez ISO w 1984 roku a najbardziej interesującym organem jest wspólny komitet powołany przez ISO/IEC, zwany Joint Technical Committee 1- Information Technology (JTC1). Formalnie dzieli się jeszcze na podkomitety SC.
+ 
+ Model OSI definiuje jakie zadania oraz rodzaje danych mogą być przesyłane między warstwami w całkowitym oderwaniu od ich fizycznej i algorytmicznej realizacji, czyli zakłada istnienie warstw abstrakcji w medium transmisyjnym, sprzęcie oraz oprogramowaniu i wokół tych warstw orientuje specyficzne dla nich protokoły, realizowane przez te protokoły usługi świadczone wyższym warstwom oraz posiadane interfejsy, umożliwiające dostęp do warstwy przez procesy z innych warstw. Mimo iż każda z warstw sama nie jest funkcjonalna, to możliwe jest projektowanie warstwy w całkowitym oderwaniu od pozostałych. Jest to realne, jeżeli wcześniej zdefiniuje się protokoły wymiany danych pomiędzy poszczególnymi warstwami.
+ 
+ W praktyce Model OSI został częściowo zmodyfikowany. Najczęstszą zmianą było połączenie warstwy fizycznej oraz łącza danych w jedną. Wynikało to z praktycznych cech tych warstw, które powodowały, że nie dało się odseparować ich pracy od siebie. Nie należy mylić Modelu OSI-RM z TCP/IP. Mimo pewnego podobieństwa oba te modele nie są w pełni zgodne.
+ 
+
+
+\includegraphics[width=0.6\textwidth]{OSI.png}
+
+\newpage
+
+\section{SDN}
+\subsection{Opis}
+	Technologia definiowana przez oprogramowanie (SDN) to podejście do przetwarzania w chmurze, które ułatwia zarządzanie siecią i umożliwia programowo wydajną konfigurację sieci w celu poprawy wydajności i monitorowania sieci.  SDN ma na celu zajęcie się faktem, że architektura statyczna tradycyjnych sieci jest zdecentralizowana i złożona, podczas gdy obecne sieci wymagają większej elastyczności i łatwiejszego rozwiązywania problemów. SDN sugeruje scentralizować inteligencję sieciową w jednym komponencie sieciowym poprzez odłączenie procesu przekazywania pakietów sieciowych (płaszczyzny danych) od procesu routingu (płaszczyzny kontrolnej). Płaszczyzna kontrolna składa się z jednego lub więcej kontrolerów, które są uważane za mózg sieci SDN, w której włączona jest cała inteligencja. Jednak centralizacja danych wywiadowczych ma swoje wady, jeśli chodzi o bezpieczeństwo,  skalowalność i elastyczność  i jest to główny problem SDN.
+
+SDN był powszechnie kojarzony z protokołem OpenFlow (do zdalnej komunikacji z elementami płaszczyzny sieci w celu określenia ścieżki pakietów sieciowych przez przełączniki sieciowe) od czasu jego pojawienia się w 2011 roku. Jednak od 2012 roku  OpenFlow dla wielu firmy nie są już wyłącznym rozwiązaniem, dodały własne techniki. Należą do nich Open Network Environment firmy Cisco Systems i platforma wirtualizacji sieci firmy Nicira.
+
+\includegraphics[width=0.9\textwidth]{sdn.png}
+ \newpage
+\section{APIC-EM}
+\subsection{Opis}
+	APIC EM rozszerza infrastrukturę Application Centric (ACI) na sieć WAN i dostęp. ACI zapewnia scentralizowaną automatyzację profilów aplikacji opartych na regułach. Dzięki programowalności zautomatyzowana kontrola sieci pomaga działom IT szybko reagować na nowe możliwości biznesowe. APIC EM można pobrać bez dodatkowych opłat, korzystając z bezpłatnego członkostwa w społeczności Cisco DevNet.
+
+Funkcje i możliwości
+
+APIC EM i jego aplikacje są częścią portfolio Cisco ONE Software. Kontroler zapewnia nisko-ryzykowne, stopniowe podejście do wdrażania technologii sieciowej definiowanej programowo (SDN) w środowiskach branżowych i kampusowych. Dzięki podejściu zorientowanemu na aplikację kontroler automatyzuje dostarczanie kompleksowej infrastruktury w celu szybkiego wdrażania aplikacji i usług.
+
+funkcje
+
+Oprogramowanie działające na dowolnym serwerze x86, oferowane jako oprogramowanie lub urządzenie
+Zaawansowany GUI bez umiejętności programowania
+Zintegrowana analityka, polityka i abstrakcja sieci
+Korzyści
+
+Masowo uproszczona konfiguracja i udostępnianie
+
+Kontroler automatyzuje wdrażanie i sprawdzanie zgodności polityk sieciowych w całej sieci end-to-end.
+
+Ochrona inwestycji
+
+Kontroler działa z istniejącą infrastrukturą sieci. Nie ma potrzeby przeprowadzania wymiany infrastruktury. Nie jest potrzebny żaden nowy sprzęt sieciowy.
+
+Otwartość, programowalność i personalizacja
+
+APIC EM jest wysoce programowalny poprzez otwarte interfejsy API (transfer danych reprezentacyjnych [RESTful] i OSGi). Umożliwia niezależnym twórcom oprogramowania tworzenie innowacyjnych usług sieciowych i aplikacji, które przyczyniają się do wzrostu gospodarczego.
+
+Polityka biznesowa do konfiguracji sieci
+
+Sterownik automatycznie tłumaczy zasady biznesowe na strategie na poziomie urządzeń sieciowych i umożliwia egzekwowanie zasad w sieciach typu end-to-end.
+\newpage
 \section{Python}
 \subsection{Opis}
 	Python jest interpretowanym, interaktywnym językiem programowania stworzonym przez Guido van Rossuma w 1990 roku. Posiada w pełni dynamiczny system typów i automatyczne zarządzanie pamięcią, jest zatem podobny do takich języków, jak Tcl, Perl, Scheme czy Ruby. Python rozwijany jest jako projekt Open Source, zarządzany przez niedochodową Python Software Fundation.
+	
+\includegraphics[width=0.9\textwidth]{python.png}
 \subsection{Rozwój języka}
 	Pythona stworzył we wczesnych latach 90. Guido van Rossum – jako następcę języka ABC, stworzonego w Centrum voor Wiskunde en Informatica (CWI – Centrum Matematyki i Informatyki w Amsterdamie). Van Rossum jest głównym twórcą Pythona, choć spory wkład w jego rozwój pochodzi od innych osób. Z racji kluczowej roli, jaką van Rossum pełni przy podejmowaniu ważnych decyzji projektowych, często określa się go przydomkiem „Benevolent Dictator for Life” (BDFL).
 
@@ -33,6 +113,9 @@ Choć w jego popularyzacji kładzie się nacisk na różnice w stosunku do Perla
 \section{jupyter}
 \subsection{Opis}
 Jupter to w pierwszej kolejności przeglądarkowe środowisko do pisania skryptów. Pierwotnym projektem na bazie którego powstał Jupyter jest IPYTHON, którego ostatnim wydaniem jako osobnego programu była wersja 3.0. Od wersji 4.0 IPython funkcjonuje już jako podstawowy kernel Jupytera, o czym przeczytamy dalej.
+
+\includegraphics[width=1\textwidth]{jupyter.png}
+{Przykładowe użycie jupytera w projekcie z Postman.}
 \subsection{Markdown}
 Komórki notesowe mają swoje typy. Domyślnym typem jest oczywiście komórka na wpisanie kodu. Drugim ciekawym typem jest komórka interpretująca MARKDOWN. Dzięki temu w Jupyterze można ładnie komentować kod, jak także obiekty wynikowe.
 \newpage
@@ -47,6 +130,8 @@ System powinien być chroniony przed błędami w repozytorium (przypadkowymi, ja
 System powinien być szybki. Pierwsze dwa punkty wyeliminowały wszystko prócz Monotone'a, a czwarty punkt wyeliminował wszystko, więc Torvalds postanowił napisać własny system kontroli wersji.
 Prace nad Gitem rozpoczęły się 3 kwietnia 2005 roku, projekt został ogłoszony 6 kwietnia, 7 kwietnia Git obsługiwał kontrolę wersji swojego własnego kodu, 18 kwietnia pierwszy raz wykonano łączenie kilku gałęzi kodu, 27 kwietnia Git został przetestowany pod względem szybkości z wynikiem 6,7 łat na sekundę, a 16 czerwca Linux 2.6.12 był hostowany przez Gita.
 \subsection{Najważniejsze cechy}
+
+\includegraphics[width=1\textwidth]{git.png}
 Dobre wsparcie dla rozgałęzionego procesu tworzenia oprogramowania: jest dostępnych kilka algorytmów łączenia zmian z dwóch gałęzi, a także możliwość dodawania własnych algorytmów.
 
 Praca off-line: każdy programista posiada własną kopię repozytorium, do której może zapisywać zmiany bez połączenia z siecią; następnie zmiany mogą być wymieniane między lokalnymi repozytoriami.
@@ -83,7 +168,17 @@ Dokument LaTeX-a jest normalnym plikiem tekstowym, który przechowuje tekst z do
 
   \begin{thebibliography}{9}
 
-\bibitem{python}
+  \bibitem{Model TCP/IP}
+  Wikipedia.org
+  \textit{Model TCP/IP},
+  Społeczeństwo Wikipedia,
+ 
+   \bibitem{SDN}
+  Wikipedia.org
+  \textit{ sdn},
+  Społeczestwo Wikipedia,
+  
+  \bibitem{python}
   Wikipedia.org
   \textit{ Python},
   Społeczeństwo Wikipedia,
@@ -103,6 +198,9 @@ Dokument LaTeX-a jest normalnym plikiem tekstowym, który przechowuje tekst z do
   Społeczność Wikibooks,
   https://pl.wikibooks.org/wiki/LaTeX
   2015.
+
+
+  
 
 
 \end{thebibliography}
